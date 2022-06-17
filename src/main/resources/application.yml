@@ -1,0 +1,24 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+#    url: jdbc:mysql:///test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: root
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql:///test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+
+server:
+  port: 9090
+mybatis:
+  mapper-locations: classpath:com/cj/modular/mapper/xml/*
+#  mapper-locations: classpath:com/nari/sys/mapper/xml/*.xml
+
+mybatis-plus:
+    mapper-locations: classpath:com/cj/modular/mapper/xml/*
+#  mapper-locations: classpath:com/nari/sys/mapper/xml/*.xml

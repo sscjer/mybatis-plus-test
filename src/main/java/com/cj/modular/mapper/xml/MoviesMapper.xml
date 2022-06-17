@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cj.modular.mapper.MoviesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cj.modular.entity.Movies">
+        <result column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="alias" property="alias" />
+        <result column="year" property="year" />
+        <result column="location" property="location" />
+        <result column="type" property="type" />
+        <result column="douban" property="douban" />
+        <result column="imdb" property="imdb" />
+        <result column="blueray" property="blueray" />
+        <result column="remux" property="remux" />
+        <result column="other" property="other" />
+        <result column="is4K" property="is4k" />
+        <result column="url" property="url" />
+        <result column="director" property="director" />
+        <result column="script_writer" property="scriptWriter" />
+        <result column="cast" property="cast" />
+        <result column="favorite" property="favorite" />
+        <result column="poster" property="poster" />
+        <result column="duration" property="duration" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        name, alias, year, location, type, douban, imdb, blueray, remux, other, is4K, url, director, script_writer, cast, favorite, poster, duration, create_time, update_time
+    </sql>
+
+</mapper>
