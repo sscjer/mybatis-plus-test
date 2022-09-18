@@ -1,7 +1,7 @@
 package com.cj.modular.service;
 
-import com.cj.modular.entity.Movies;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.cj.modular.entity.Movies;
 
 /**
  * <p>

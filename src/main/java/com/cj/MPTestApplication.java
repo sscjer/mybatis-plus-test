@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan("com.cj.modular.mapper")
 @SpringBootApplication
-public class MybatisPlusTestApplication {
+public class MPTestApplication {
 
 	public static strictfp void main(String[] args) {
-		SpringApplication.run(MybatisPlusTestApplication.class, args);
+		SpringApplication.run(MPTestApplication.class, args);
 	}
 
 }

@@ -9,9 +9,8 @@ spring:
 #    type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql:///test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
     username: root
-    password: root
+    password: cjer
     driver-class-name: com.mysql.cj.jdbc.Driver
-    type: com.zaxxer.hikari.HikariDataSource
 
 server:
   port: 9090

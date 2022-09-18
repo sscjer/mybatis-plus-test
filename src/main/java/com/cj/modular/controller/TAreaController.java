@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
@@ -21,7 +24,7 @@ import java.util.stream.Collectors;
  * @since 2021-08-30
  */
 @RestController
-@RequestMapping("/modular/t-area")
+@RequestMapping("/modular/t-area/")
 public class TAreaController {
     @Autowired
     private TAreaService tAreaService;
@@ -40,5 +43,6 @@ public class TAreaController {
         });
         return map.get(-1);
     }
+
 }
 
